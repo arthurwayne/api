@@ -15,7 +15,7 @@ class CreateTokensTable extends Migration
     {
         Schema::create('tokens', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('userid')
+            $table->integer('userid');
             $table->string('token');
             $table->string('url');
         });
